@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="70dp"
+android:background="#fafafa"
+android:orientation="horizontal" >
+
+<TextView
+    android:id="@+id/name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:fontFamily="sans-serif"
+    android:textColor="#000000"
+    android:textSize="15sp" />
+
+<ImageButton
+    android:id="@+id/voice_call"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@+id/call"
+    android:layout_centerVertical="true"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:background="@mipmap/voice_call" />
+
+<ImageButton
+    android:id="@+id/call"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginEnd="15dp"
+    android:layout_marginRight="15dp"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:background="@mipmap/icon_video"/>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#ccc"
+    android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
